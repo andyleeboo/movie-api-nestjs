@@ -14,7 +14,7 @@ import { UpdateMovieDto } from './dto/update-dto.dto';
 
 @Controller('movies')
 export class MoviesController {
-  constructor(private moviesService: MoviesService) {}
+  constructor(private readonly moviesService: MoviesService) {}
 
   @Get()
   getAll() {
